@@ -2,7 +2,7 @@
 
 A simple AI-powered assistant that integrates with Gmail and Google Calendar using natural language conversations. Built as a single-file Express.js application for easy deployment.
 
-![Jarvis Landing Page](screenshots/landing-page.png)
+![Jarvis Landing Page](screenshots/localhost_3000_.png)
 
 ## Features
 
@@ -13,7 +13,7 @@ A simple AI-powered assistant that integrates with Gmail and Google Calendar usi
 - 💬 Clean chat interface with message bubbles
 - 🚀 Single-file deployment ready for Vercel/GitHub
 
-![Chat Interface](screenshots/chat-interface.png)
+![Chat Interface](screenshots/Screenshot 2025-07-28 at 1.09.52 AM.png)
 
 ## Quick Start
 
