@@ -1,20 +1,23 @@
 # Overview
 
-This is an AI-powered assistant application built with a modern full-stack architecture. The application allows users to interact with an AI assistant that can perform actions with Google services (Gmail and Calendar) through OAuth integration and tool calling capabilities.
+Jarvis is a simple AI-powered assistant that integrates with Gmail and Google Calendar using natural language conversations. Built as a single-file Express.js application for easy deployment and maintenance.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Code structure: Single file, minimal UI, focused on functionality.
+No comment lines in codebase.
+No references to development platform names.
 
 ## System Architecture
 
-The application follows a monorepo structure with clear separation between client and server code:
+Simplified single-file architecture:
 
-- **Frontend**: React-based SPA using Vite for development and building
-- **Backend**: Express.js server with TypeScript
-- **Database**: PostgreSQL with Drizzle ORM for schema management
-- **AI Integration**: Mistral AI for LLM capabilities with tool calling
-- **External Integrations**: Google OAuth for Gmail and Calendar access
+- **Application**: Single Express.js file (app.js) with embedded HTML
+- **Database**: PostgreSQL with simple SQL queries
+- **AI Integration**: Mistral AI for natural language processing
+- **Authentication**: Google OAuth with session management
+- **Deployment**: Vercel-ready with vercel.json configuration
 
 ## Key Components
 
