@@ -230,4 +230,4 @@ The application works on any Node.js hosting platform:
 
 ## License
 
-MIT License - feel free to use this project for your own purposes.
+GNU License
