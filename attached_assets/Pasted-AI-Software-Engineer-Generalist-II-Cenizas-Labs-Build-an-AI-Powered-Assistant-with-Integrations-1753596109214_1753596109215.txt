@@ -1,0 +1,66 @@
+AI Software Engineer Generalist II @ Cenizas Labs
+🚀 Build an AI-Powered Assistant with Integrations
+
+Objective:
+Create a web-based AI assistant that can:
+
+Interact with a OAuth based third-party integrations
+Parse and invoke integration functions via llm tools calls
+Maintain conversation history and context
+Allow user to authorize multiple 3rd party integrations via OAuth
+This task evaluates your ability to build agentic LLM workflows, manage external integrations and manage messages/context.
+
+Task Details
+1. Frontend + Backend
+Create a simple chat UI using Next.js (App router) + Vercel AI SDK (or anything you prefer)
+On UI, user can:
+Generally converse with AI and receive answers streamed via the assistant
+Authorize 3rd party integrations via OAuth.
+Ask queries like "Get calendar events for today" and receive corresponding response
+On server, add required API endpoints - /api/chat, /api/login, /api/register and integration OAuth authorize callbacks (e.g., /api/authorize/google, /api/callback/google)
+Create a integrations registry along with functions they have.
+Expose tools to LLM such as:
+searchIntegrationFunction – return a list of relevant functions from registry for a user intent
+callIntegrationFunction(parameters) – invoke the integration function with validated params
+2. AI Logic
+LLM agent should:
+Process user messages decide which tool to use (search/call)
+Maintain session messages using a database layer (file-based or SQLite/PG)
+Handle failed toolcalls gracefully
+4. Resources Provided
+You can start by converting some basic CRUD operations into callable functions from Google calendar and gmail. You can use googleapis and google-auth-library to create oauth flow and call calendar or gmail CRUD operations.
+
+Tech Stack Suggestions
+Category	Examples
+Frontend + Backend	Next.js
+LLM Framework	OpenAI SDK, Vercel AI SDK, LangChain, Ollama
+Database	SQLite/PG, File based
+Integrations	googleapis, google-oauth-library
+Deployment	Vercel, Railway, Render, Docker
+Evaluation Criteria
+1. Problem Solving
+How well do you translate user input into precise function or set of functions?
+Can your agent autonomously figure out when and how to call tools?
+2. Code Quality
+Well-structured and modular server-side and client-side code
+Consistent naming, comments, error handling
+3. AI/Tool Implementation
+Does the agent work as expected?
+Can it handle edge cases, or ambiguous input?
+4. Reusability & Architecture
+Is it easy to replicate google’s functions implementation logic for another integration like GitHub, Jira, or Notion?
+Deliverables
+✅ GitHub repo (public) with complete source code
+✅ README explaining setup, tool logic, architecture
+✅ Sample queries & how they're handled via LLM
+✅ Live chat app URL
+No Strict Rules — Think Like a Builder
+Use any language or framework, any LLM, and any integrations you prefer. This task is about how you build, reason, and adapt.
+
+Do not copy-paste ChatGPT-generated projects without understanding. You may use AI to help code, but you must:
+
+Know how every part works
+Be ready to explain why it’s there
+If you have any doubts, feel free to ask questions.
+
+✨ Good luck — we’re excited to see how you build a general-purpose AI tool engine!
