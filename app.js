@@ -2,6 +2,8 @@ import express from 'express';
 import session from 'express-session';
 import { Pool } from 'pg';
 import { createClient } from '@vercel/postgres';
+import fetch from 'node-fetch';
+globalThis.fetch = fetch; // Polyfill fetch for Node.js
 
 const app = express();
 
@@ -538,3 +540,4 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
